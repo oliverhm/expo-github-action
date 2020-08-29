@@ -1,4 +1,4 @@
-name: Expo Publish
+name: Expo Publish on Development
 on:
   push:
     branches:
@@ -18,4 +18,4 @@ jobs:
           expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
       - run: npm install
-      - run: expo publish
+      - run: expo publish --release-channel production
