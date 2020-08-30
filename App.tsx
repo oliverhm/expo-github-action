@@ -6,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello from Expo Github Action</Text>
+      <Text>You're now on environment Staging :D</Text>
       <StatusBar style="auto" />
     </View>
   );
